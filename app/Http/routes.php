@@ -11,16 +11,19 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
 
-
+/*
 Route::get('members', 'ProfilesController@all');
 Route::get('members/{username}', 'ProfilesController@show');
 
 Route::get('members', 'ProfilesController@all');
 Route::get('members/{username}', 'ProfilesController@show');
+*/
 
 
 /* Welcome landing page*/
