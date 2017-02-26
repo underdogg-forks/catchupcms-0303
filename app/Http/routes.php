@@ -11,26 +11,38 @@
 |
 */
 
-/* Welcome landing page*/
 Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('members', 'ProfilesController@all');
+Route::get('members/{username}', 'ProfilesController@show');
+
+Route::get('members', 'ProfilesController@all');
+Route::get('members/{username}', 'ProfilesController@show');
+
+
+/* Welcome landing page*/
+/*
+
+
 Route::get('dashboard', 'DashboardController@index');
 
-/* Authentication Routes provided by Laravel */
+
+/* Authentication Routes provided by Laravel *  /
 Route::auth();
 
-/* Email Confirmation Routes */
+/* Email Confirmation Routes *  /
 Route::get('login/confirm/{email_token}', 'Auth\AuthController@confirmEmail');
 Route::get('login/confirm', function () {
     return redirect('login');
 });
 
-/* Application Locale switch */
+/* Application Locale switch *  /
 Route::get('locale/{locale}', ['as'=>'locale.switch', 'uses'=>'LocaleController@switchLocale']);
 
-/* User / Member / Profile Routes */
+/* User / Member / Profile Routes * /
 Route::get('members', 'ProfilesController@all');
 Route::get('members/{username}', 'ProfilesController@show');
 
@@ -48,7 +60,7 @@ Route::patch('users/{username}/verify', 'UsersController@verify');
 Route::patch('users/{username}/password', 'UsersController@changePassword');
 Route::delete('users/{username}', 'UsersController@delete');
 
-/* Application settings routes */
+/* Application settings routes *  /
 Route::get('settings', function () { return redirect('/'); });
 Route::get('settings/general', 'SettingsController@showGeneralSettingsForm');
 Route::patch('settings/general', 'SettingsController@updateGeneralSettings');
@@ -56,7 +68,7 @@ Route::get('settings/emails', 'EmailTemplatesController@showEmailTemplatesForm')
 Route::patch('settings/emails/{templateId}', 'EmailTemplatesController@update');
 Route::post('settings/emails/{templateId}/translate', 'EmailTemplatesController@translate');
 
-/* Menus routes */
+/* Menus routes * /
 Route::get('settings/menus', 'MenusController@show');
 Route::get('settings/menus/{menuId}', 'MenusController@getMenu'); // for ajax request that populates the form
 Route::post('settings/menus','MenusController@create');
@@ -79,6 +91,7 @@ Route::patch('permissions/{permissionId}', 'PermissionsController@updateSinglePe
 Route::patch('permissions', 'PermissionsController@update');
 
 Route::get('modules', 'ModulesController@all');
+*/
 
 // \DB::listen(function($query) {
 //     var_dump($query);

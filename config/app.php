@@ -172,7 +172,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Folklore\Image\ImageServiceProvider::class,
 
         App\Providers\CustomValidationRulesServiceProvider::class,
         Nwidart\Modules\LaravelModulesServiceProvider::class,

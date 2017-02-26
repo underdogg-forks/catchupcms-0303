@@ -21,9 +21,10 @@ class AppServiceProvider extends ServiceProvider
         // Should be removed for master branch
         // memcached library is used to simulate the real memcached php extension
         // which has actually doesn't yet exist on windows (php_memcached.dll).
-        if ( ! class_exists('Memcached') ) {
+        /*if ( ! class_exists('Memcached') ) {
             include("memcached.php");
-        }
+        }*/
+
 
         if ( $this->app->isLocal() ) {
             $kernel->pushMiddleware('App\Http\Middleware\FlushViews');
