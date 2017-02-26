@@ -16,6 +16,7 @@ class CoreDatabaseSeeder extends Seeder
 	{
 		Model::unguard();
 
-		// $this->call("OthersTableSeeder");
+        $this->call(__NAMESPACE__.'\ConfigTableSeeder');
+        $this->call(__NAMESPACE__.'\NavTableSeeder');
 	}
 }
