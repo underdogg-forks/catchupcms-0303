@@ -25,8 +25,8 @@ $router->group([
 $router->group([
     'prefix' => 'dashboard',
     'namespace' => 'Dashboard',
-    'middleware' => 'hasPermission',
-    'hasPermission' => 'access@admin_config',
+    //'middleware' => 'hasPermission',
+    //'hasPermission' => 'access@admin_config',
 ], function (Router $router) {
 
     $router->group(['prefix' => 'widget'], function (Router $router) {

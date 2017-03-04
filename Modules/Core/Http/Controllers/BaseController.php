@@ -67,6 +67,10 @@ class BaseController extends Controller
 
     public function __construct(Theme $theme, Filesystem $file)
     {
+
+        dd($theme);
+
+
         $this->setDependencies($theme, $file);
 
         if (method_exists($this, 'boot')) {
@@ -90,7 +94,9 @@ class BaseController extends Controller
     {
         $this->file = $file;
 
-        // set some theme options up
+
+
+        /*// set some theme options up
         if (!isset($this->themeName)) {
             $this->themeName = config('cms.core.app.themes.frontend', 'default');
         }
@@ -99,7 +105,7 @@ class BaseController extends Controller
             $this->theme = $theme->uses($this->themeName)->layout($this->layout);
         } catch (\Teepluss\Theme\UnknownThemeException $e) {
             $this->theme = $theme->uses('default')->layout($this->layout);
-        }
+        }*/
 
         // figure out which module we are currently in
         $this->module = $this->getModule($this);
@@ -224,6 +230,9 @@ class BaseController extends Controller
     {
         $type = strtolower($type);
         $supportedTypes = ['theme', 'app', 'module', 'custom'];
+
+dd($this->theme);
+
 
         if (!in_array($type, $supportedTypes) && substr($type, 0, 6) !== 'module') {
             $type = 'watch';

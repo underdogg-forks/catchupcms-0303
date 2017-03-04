@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Datatables;
+namespace Modules\Dashboard\Datatables;
 
 class NavigationManager
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\Admin\Services;
+namespace Modules\Dashboard\Services;
 
-use Modules\Admin\Models\Widget;
+use Modules\Dashboard\Models\Widget;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Support\Facades\File;
 use Nwidart\Modules\Repository as Module;

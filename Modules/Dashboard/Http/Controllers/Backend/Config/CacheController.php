@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Http\Controllers\Backend\Config;
+namespace Modules\Dashboard\Http\Controllers\Backend\Config;
 
 use Illuminate\Http\Request;
 

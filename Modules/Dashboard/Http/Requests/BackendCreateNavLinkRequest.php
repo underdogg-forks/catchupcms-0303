@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Http\Requests;
+namespace Modules\Dashboard\Http\Requests;
 
 use App\Http\Requests\Request;
 use Auth;

@@ -1,24 +1,32 @@
 <?php
 
-namespace Modules\Admin\Http\Controllers\Backend\Dashboard;
+namespace Modules\Dashboard\Http\Controllers\Backend\Dashboard;
 
-use Modules\Admin\Http\Controllers\Backend\BaseAdminController;
-use Modules\Admin\Services\DashboardService;
+use Modules\Dashboard\Http\Controllers\Backend\BaseAdminController;
+use Modules\Dashboard\Services\DashboardService;
 use Collective\Html\HtmlBuilder;
+
+
+
 
 class DashboardController extends BaseAdminController
 {
-    public function getIndex(DashboardService $dashboard)
-    {
-        $this->theme->setTitle('Dashboard');
-        $dashboard->loadWidgetAssets();
+//DashboardService $dashboard
 
-        $builder = app(HtmlBuilder::class);
-        $gridLayout = $dashboard->getGridLayout();
+    public function getIndex()
+    {
+        dd($theme);
+
+
+        //$this->theme->setTitle('Dashboard');
+        //$dashboard->loadWidgetAssets();
+
+        /*$builder = app(HtmlBuilder::class);
+        $gridLayout = $dashboard->getGridLayout();*/
+        /*'gridLayout' => $gridLayout,
+            'builder' => $builder,*/
 
         return $this->setView('admin.dashboard.index', [
-            'gridLayout' => $gridLayout,
-            'builder' => $builder,
         ], 'module');
     }
 

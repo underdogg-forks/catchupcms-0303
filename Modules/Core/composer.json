@@ -1,15 +1,13 @@
 {
-	"name": "nwidart/core",
-	"description": "",
-	"authors": [
-		{
-			"name": "Nicolas Widart",
-			"email": "n.widart@gmail.com"
-		}
-	],
-	"autoload": {
-		"psr-4": {
-			"Modules\\Core\\": ""
-		}
-	}
+    "name": "cysha/module-core",
+    "type": "pxcms-module",
+    "description": "Core Module for Phoenix CMS",
+    "license": "MIT",
+    "authors": [
+
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
 }

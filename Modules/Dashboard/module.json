@@ -7,10 +7,10 @@
     "order": 0,
     "providers": [
         "Modules\\Dashboard\\Providers\\DashboardServiceProvider",
-        "Modules\\Admin\\Providers\\AdminModuleServiceProvider",
-        "Modules\\Admin\\Providers\\AdminRoutingProvider",
-        "Modules\\Admin\\Providers\\AdminEventsProvider",
-        "Modules\\Admin\\Providers\\AdminServicesProvider"
+        "Modules\\Dashboard\\Providers\\AdminModuleServiceProvider",
+        "Modules\\Dashboard\\Providers\\AdminRoutingProvider",
+        "Modules\\Dashboard\\Providers\\AdminEventsProvider",
+        "Modules\\Dashboard\\Providers\\AdminServicesProvider"
     ],
     "aliases":{},
     "files": [

@@ -1,8 +1,8 @@
 <?php
 
-namespace Modules\Admin\Traits;
+namespace Modules\Dashboard\Traits;
 
-use Modules\Admin\Events\GotDatatableConfig;
+use Modules\Dashboard\Events\GotDatatableConfig;
 use Yajra\Datatables\Datatables;
 
 trait DataTableTrait

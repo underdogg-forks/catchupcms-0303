@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Models;
+namespace Modules\Dashboard\Models;
 
 use Modules\Core\Models\BaseModel as CoreBaseModel;
 

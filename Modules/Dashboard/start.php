@@ -12,4 +12,4 @@
 |
 */
 
-require __DIR__ . '/Routes/routes.php';
+//require __DIR__ . '/Routes/routes.php';

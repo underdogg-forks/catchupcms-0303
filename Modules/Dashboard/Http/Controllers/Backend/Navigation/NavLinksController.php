@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\Admin\Http\Controllers\Backend\Navigation;
+namespace Modules\Dashboard\Http\Controllers\Backend\Navigation;
 
-use Modules\Admin\Http\Controllers\Backend\BaseAdminController;
-use Modules\Admin\Http\Requests\BackendCreateNavLinkRequest;
+use Modules\Dashboard\Http\Controllers\Backend\BaseAdminController;
+use Modules\Dashboard\Http\Requests\BackendCreateNavLinkRequest;
 use Modules\Core\Models\Navigation;
 use Modules\Core\Models\NavigationLink;
 use Former\Facades\Former;

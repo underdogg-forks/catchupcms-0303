@@ -40,11 +40,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-
-        'api' => [
+     
+        /*'api' => [
             'driver' => 'token',
             'provider' => 'users',
-        ],
+        ],*/
     ],
 
     /*
@@ -67,12 +67,12 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => Cms\Modules\Auth\Models\User::class,
         ],
 
         // 'users' => [
         //     'driver' => 'database',
-        //     'table' => 'users',
+        //     'table' => 'auth_users',
         // ],
     ],
 
@@ -99,7 +99,7 @@ return [
         'users' => [
             'provider' => 'users',
             'email' => 'auth.emails.password',
-            'table' => 'password_resets',
+            'table' => 'auth_password_resets',
             'expire' => 60,
         ],
     ],

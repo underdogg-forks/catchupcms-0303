@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Services;
+namespace Modules\Dashboard\Services;
 
 use Illuminate\Contracts\Config\Repository as Config;
 use Nwidart\Modules\Repository as Module;

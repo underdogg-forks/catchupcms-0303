@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Events;
+namespace Modules\Dashboard\Events;
 
 use Illuminate\Queue\SerializesModels;
 

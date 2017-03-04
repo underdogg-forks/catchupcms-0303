@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Datatables;
+namespace Modules\Dashboard\Datatables;
 
 class DashboardWidgetsManager
 {
@@ -35,7 +35,7 @@ class DashboardWidgetsManager
                 'sort_order' => 'asc',
                 'source' => 'admin.config.dashboard',
                 'collection' => function () {
-                    $model = 'Modules\Admin\Models\Widget';
+                    $model = 'Modules\Dashboard\Models\Widget';
 
                     return $model::with('options')->get();
                 },

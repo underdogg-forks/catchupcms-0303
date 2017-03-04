@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Composers;
+namespace Modules\Dashboard\Composers;
 
 use GuzzleHttp\Client;
 use File;

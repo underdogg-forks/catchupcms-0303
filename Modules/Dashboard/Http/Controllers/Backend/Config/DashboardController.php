@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Admin\Http\Controllers\Backend\Config;
+namespace Modules\Dashboard\Http\Controllers\Backend\Config;
 
-use Modules\Admin\Datatables\DashboardWidgetsManager;
-use Modules\Admin\Services\DashboardService;
-use Modules\Admin\Traits\DataTableTrait;
+use Modules\Dashboard\Datatables\DashboardWidgetsManager;
+use Modules\Dashboard\Services\DashboardService;
+use Modules\Dashboard\Traits\DataTableTrait;
 use Collective\Html\HtmlBuilder;
 
 class DashboardController extends BaseConfigController

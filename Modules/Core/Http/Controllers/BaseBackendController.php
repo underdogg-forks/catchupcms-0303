@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 
+//
+
 class BaseBackendController extends BaseController
 {
     /**
@@ -43,6 +45,9 @@ class BaseBackendController extends BaseController
     public function setActions(array $actions)
     {
         $this->actions = $actions;
+
+        dd($this->theme);
+
 
         $this->theme->setActions($actions);
     }
