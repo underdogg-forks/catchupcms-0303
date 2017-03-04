@@ -6,10 +6,15 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Dashboard\\Providers\\DashboardServiceProvider"
+        "Modules\\Dashboard\\Providers\\DashboardServiceProvider",
+        "Modules\\Admin\\Providers\\AdminModuleServiceProvider",
+        "Modules\\Admin\\Providers\\AdminRoutingProvider",
+        "Modules\\Admin\\Providers\\AdminEventsProvider",
+        "Modules\\Admin\\Providers\\AdminServicesProvider"
     ],
     "aliases":{},
     "files": [
-        "start.php"
+        "start.php",
+        "helpers.php"
     ]
 }

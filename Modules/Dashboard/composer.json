@@ -1,6 +1,7 @@
 {
-	"name": "nwidart/dashboard",
+	"name": "cysha/module-admin",
 	"description": "",
+  "minimum-stability": "dev",
 	"authors": [
 		{
 			"name": "Nicolas Widart",
